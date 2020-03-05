@@ -8,14 +8,14 @@ let op input file met kommas uitzoeken of het misschien niet beter is om excel f
 import pandas as pd
 
 
-file_Naam_In = "201951348_inschiet.csv"
-filenaam_uit = "201951348_inschiet_bewerkt.csv"
+file_Naam_In = "201957745_aangepast.csv"
+filenaam_uit = "201957745_1baan.csv"
 
 trespa_lijst = pd.read_csv(file_Naam_In, ";", encoding="utf-8")
 trespa_lijst[0:1]
 
 oap = overaantalpercentage = 1   # 1.02 = 2% overlevering
-ee = 4                           #  = etiketten overlevering handmatig
+ee = 5                           #  = etiketten overlevering handmatig
 
 
 def print_trespa_rolls(colorcode, beeld, aantal):
